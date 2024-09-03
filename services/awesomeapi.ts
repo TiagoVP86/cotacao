@@ -19,7 +19,7 @@ export const getUSD = async () => {
 
 export const getEUR = async () => {
   try {
-    let url = baseUrl + "/all/EUR-BRL";
+    let url = baseUrl + "/last/EUR-BRL";
     const req = await fetch(url);
     const json = await req.json();
 
